@@ -47,4 +47,4 @@ function sendAPICall(objNatGeo, imagePath) {
     res.sendfile(imagePath)
   })
 }
-app.listen(process.env.PORT || 8080, process.env.IP)
+app.listen(process.env.PORT)
