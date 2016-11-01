@@ -6,7 +6,7 @@ var fs = require('fs')
 function getPotd() {
   requestInfo()
   function requestInfo() {
-    var now = new Date() 
+    var now = new Date()
     request('http://www.nationalgeographic.com/photography/photo-of-the-day/_jcr_content/.gallery.json', function(error, response, body) {
     if (!error && response.statusCode == 200) {
         var imgurl = 'http://yourshot.nationalgeographic.com' + JSON.parse(body).items[0].originalUrl
@@ -29,11 +29,8 @@ function getPotd() {
         console.log(error)
       }
     })
-  }
-    var now = new Date() 
-    if (now.getHours() === 0 || now.getSeconds() === 20) {
-    requestInfo()
-    console.log('Image checked')
+
+   
   }
 }
 getPotd()
@@ -47,4 +44,4 @@ function sendAPICall(objNatGeo, imagePath) {
     res.sendfile(imagePath)
   })
 }
-app.listen(process.env.PORT)
+app.listen(process.env.PORT, process.env.IP)
