@@ -10,14 +10,15 @@
     "node-youtubeapi-simplifier": "^1.4.2",
     "async": "^0.2.10",
     "express-handlebars": "^3.0.0",
-    "snyk": "^1.88.0"
+    "snyk": "^1.192.3"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Andrew Morris",
   "license": "GPL-3.0",
