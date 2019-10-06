@@ -10,7 +10,7 @@
     "node-youtubeapi-simplifier": "^1.4.2",
     "async": "^0.2.10",
     "express-handlebars": "^3.0.0",
-    "snyk": "^1.88.0"
+    "snyk": "^1.231.0"
   },
   "devDependencies": {},
   "scripts": {
